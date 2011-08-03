@@ -1,0 +1,11 @@
+<section class="round">
+	<h1><%= @folder.folders_name %></h1>
+</section>
+<div id=gallery>
+<ul>
+<%= render:partial => @album ,:locals => {:folder=> @folder.id} %>
+</u1>
+</div>
+<section class="round">
+<%= link_to 'Back', folders_path %>
+</section>

@@ -1,0 +1,100 @@
+body {
+	background: #959796 url(/images/wood-repeat.jpg);
+}
+section {
+  width: 600px; 
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+}
+section h1 {
+  font-size: 200%;
+}
+
+#products
+{
+  width: 200px; 
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background: #fff;
+  text-align: center;	
+}
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+#container {
+	width: 600px; 
+	margin: 40px auto;
+	margin-left:auto;
+}
+#gallery {
+    border: 10px solid #1D0C16;
+    height: auto;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    background: #272229;
+    /*box shadow effect in Safari and Chrome*/
+    -webkit-box-shadow: #272229 10px 10px 20px;
+    /*box shadow effect in Firefox*/
+    -moz-box-shadow: #272229 10px 10px 20px;
+    /*box shadow effect in IE*/
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#272229', Direction=135, Strength=10);     
+    /*box shadow effect in Browsers that support it, Opera 10.5 pre-alpha release*/
+     box-shadow: #272229 10px 10px 20px;
+}
+
+#frame {
+    border: 10px solid #1D0C16;
+    height: auto;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    background: #959796;
+    /*box shadow effect in Safari and Chrome*/
+    -webkit-box-shadow: #272229 10px 10px 20px;
+    /*box shadow effect in Firefox*/
+    -moz-box-shadow: #272229 10px 10px 20px;
+    /*box shadow effect in IE*/
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#272229', Direction=135, Strength=10);     
+    /*box shadow effect in Browsers that support it, Opera 10.5 pre-alpha release*/
+     box-shadow: #272229 10px 10px 20px;
+}
+#gallery ul{
+    /* This position the ul content in the middle of the gallery*/
+    margin-left:50px; 
+}
+
+#gallery ul li {
+    /* In order to create the proper effect with hover we should use display inline-table
+        This will display the big picture right next to its thumbnail
+    */
+    list-style:none; 
+    display:inline-table; 
+    padding:10px;	     
+ }
+
+#frame ul{
+    /* This position the ul content in the middle of the gallery*/
+    margin-left:50px; 
+}
+
+#frame ul li {
+    /* In order to create the proper effect with hover we should use display inline-table
+        This will display the big picture right next to its thumbnail
+    */
+    list-style:none; 
+    display:inline-table; 
+    padding:10px;	     
+ }

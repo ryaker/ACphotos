@@ -1,0 +1,41 @@
+<h1>Listing print_products</h1>
+
+<table>
+  <tr>
+    <th>Photo print product</th>
+    <th>Photo</th>
+    <th>Paper type</th>
+    <th>Width</th>
+    <th>Height</th>
+    <th>Matted</th>
+    <th>Framed</th>
+    <th>Price</th>
+    <th>Print description</th>
+    <th>Create date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @print_products.each do |print_product| %>
+  <tr>
+    <td><%= print_product.photo_print_product_id %></td>
+    <td><%= print_product.photo_id %></td>
+    <td><%= print_product.paper_type_id %></td>
+    <td><%= print_product.width %></td>
+    <td><%= print_product.height %></td>
+    <td><%= print_product.matted %></td>
+    <td><%= print_product.framed %></td>
+    <td><%= print_product.price %></td>
+    <td><%= print_product.print_description %></td>
+    <td><%= print_product.create_date %></td>
+    <td><%= link_to 'Show', print_product %></td>
+    <td><%= link_to 'Edit', edit_print_product_path(print_product) %></td>
+    <td><%= link_to 'Destroy', print_product, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Print product', new_print_product_path %>

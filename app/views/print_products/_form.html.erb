@@ -1,0 +1,57 @@
+<%= form_for(@print_product) do |f| %>
+  <% if @print_product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@print_product.errors.count, "error") %> prohibited this print_product from being saved:</h2>
+
+      <ul>
+      <% @print_product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :photo_print_product_id %><br />
+    <%= f.text_field :photo_print_product_id %>
+  </div>
+  <div class="field">
+    <%= f.label :photo_id %><br />
+    <%= f.text_field :photo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :paper_type_id %><br />
+    <%= f.text_field :paper_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :width %><br />
+    <%= f.text_field :width %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :matted %><br />
+    <%= f.text_field :matted %>
+  </div>
+  <div class="field">
+    <%= f.label :framed %><br />
+    <%= f.text_field :framed %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :print_description %><br />
+    <%= f.text_field :print_description %>
+  </div>
+  <div class="field">
+    <%= f.label :create_date %><br />
+    <%= f.datetime_select :create_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

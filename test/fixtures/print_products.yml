@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  photo_print_product_id: 1
+  photo_id: 1
+  paper_type_id: 1
+  width: 1
+  height: 1
+  matted: MyString
+  framed: MyString
+  price: 1.5
+  print_description: MyString
+  create_date: 2011-08-02 23:30:31
+
+two:
+  photo_print_product_id: 1
+  photo_id: 1
+  paper_type_id: 1
+  width: 1
+  height: 1
+  matted: MyString
+  framed: MyString
+  price: 1.5
+  print_description: MyString
+  create_date: 2011-08-02 23:30:31

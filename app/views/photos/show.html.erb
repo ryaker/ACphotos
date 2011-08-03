@@ -1,0 +1,15 @@
+<section class="round">
+<h1><%= @photo.photo_name %></h1>
+</section>
+<div id=frame>
+	<ul >
+<li><%= image_tag ("http://www.acoupleofartists.com/" + @photo.image_path), :alt => @photo.photo_name, :width => 500 %></li>
+</ul>
+<%= render @tags %>
+<div id=products class="round">
+<%= render :partial => @prints, :locals => {:photoname => @photo.photo_name} %>
+</div>
+</div>
+<section class="round">
+<%= link_to 'Back', folder_path(params[:folder_id]) %>
+</section>

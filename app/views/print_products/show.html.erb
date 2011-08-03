@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Photo print product:</b>
+  <%= @print_product.photo_print_product_id %>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <%= @print_product.photo_id %>
+</p>
+
+<p>
+  <b>Paper type:</b>
+  <%= @print_product.paper_type_id %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%= @print_product.width %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @print_product.height %>
+</p>
+
+<p>
+  <b>Matted:</b>
+  <%= @print_product.matted %>
+</p>
+
+<p>
+  <b>Framed:</b>
+  <%= @print_product.framed %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @print_product.price %>
+</p>
+
+<p>
+  <b>Print description:</b>
+  <%= @print_product.print_description %>
+</p>
+
+<p>
+  <b>Create date:</b>
+  <%= @print_product.create_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_print_product_path(@print_product) %> |
+<%= link_to 'Back', print_products_path %>
