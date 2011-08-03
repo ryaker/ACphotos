@@ -7,8 +7,10 @@
 </ul>
 <%= render @tags %>
 <div id=products class="round">
+	<div class="container">
 <%= render :partial => @prints, :locals => {:photoname => @photo.photo_name} %>
-</div>
+	</div>
+	</div>
 </div>
 <section class="round">
 <%= link_to 'Back', folder_path(params[:folder_id]) %>

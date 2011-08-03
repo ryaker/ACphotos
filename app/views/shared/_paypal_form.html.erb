@@ -1,0 +1,15 @@
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+			<%= image_submit_tag("https://www.paypal.com/en_US/i/btn/x-click-but22.gif",:border=>'0',:name => 'submit',:alt=>"Make payments with PayPal - it's fast, free and secure!",:width=>'50') %>
+			<%= hidden_field_tag 'add', '1' %>
+			<%= hidden_field_tag 'cmd', '_cart' %>
+			<%= hidden_field_tag 'business', 'ryaker@yaker.org' %>
+			<%= hidden_field_tag 'item_name', photoname + print_product.print_description%>
+			<%= hidden_field_tag 'amount', print_product.price %>
+			<%= hidden_field_tag 'no_note', '1' %>
+			<%= hidden_field_tag 'currency_code', 'USD' %>
+			<%= hidden_field_tag 'page_style', 'Acoupleofartists' %>
+			<%= hidden_field_tag 'return', 'http://www.acoupleofartists.com' %>
+			<%= hidden_field_tag 'lc', 'US' %>
+
+          </form>

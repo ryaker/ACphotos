@@ -1,16 +1,6 @@
-     <li> <%= print_product.print_description %>  $<%= print_product.price %>
-		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-
-		            <input type="image"  width=50 src="https://www.paypal.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
-		            <input type="hidden" name="add" value="1">
-		            <input type="hidden" name="cmd" value="_cart">
-		            <input type="hidden" name="business" value="ryaker@yaker.org">
-		            <input type="hidden" name="item_name" value="<%= photoname %> - <%= print_product.print_description %>">
-		            <input type="hidden" name="amount" value="<%= print_product.price %>">
-		            <input type="hidden" name="no_note" value="1">
-		            <input type="hidden" name="currency_code" value="USD">
-					<input type="hidden" name="page_style" value="Acoupleofartists">
-
-					<input type="hidden" name="return" value="http://www.acoupleofartists.com">
-		            <input type="hidden" name="lc" value="US">
-		          </form></li>
+    <div class="span-12">
+		<div class="span-7"><%= print_product.print_description %></div>
+		<div class="span-1">$<%= print_product.price %></div>
+		<div class="span-2"><%= render :partial => 'shared/paypal_form',:locals => {:photoname => @photo.photo_name, :print_product => print_product} %></div>
+	</div>
+	    <div id="seperator" class="span-12"><p>&nbsp;</p></div>
