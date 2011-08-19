@@ -5,8 +5,9 @@
 	<ul >
 <li><%= image_tag ("http://www.acoupleofartists.com/" + @photo.image_path), :alt => @photo.photo_name, :width => 500 %></li>
 </ul>
-<%= render @tags %>
+
 <div id=products class="round">
+	<p><strong>Tags:</strong>  <%= render @tags %></p>
 	<div class="container">
 <%= render :partial => @prints, :locals => {:photoname => @photo.photo_name} %>
 	</div>
